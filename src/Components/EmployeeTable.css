@@ -1,0 +1,50 @@
+.main-container{
+    margin-top: 0.5rem;
+  }
+  .table-container{
+    overflow: auto;
+  }
+  
+  table{
+    border-spacing: 0;
+    width: 100%;
+  }
+  
+  td,th{
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid #afafaf;
+    text-align: left;
+  }
+  
+  th .data{
+    font-weight: 800;
+  }
+  .footer{
+    display: flex;
+    margin: 1.5rem 0;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .dlt-btn{
+    background-color: rgb(243, 12, 12);
+    padding: 0.5rem 1rem;
+    border-radius: 1.5rem;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    align-self: center;
+    height: 3rem;
+    transition: 0.2s;
+    
+  }
+  .dlt-btn:hover{
+    background-color:coral;
+    color:#fff;
+  }
+  .dlt-btn.not-active{
+    background: #afafaf;
+    color: #d4d4d4;
+  
+  }

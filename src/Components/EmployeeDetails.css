@@ -1,0 +1,39 @@
+td,th{
+    margin: 0;
+    padding: 0.5rem;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: left;
+  }
+  tr.checked{
+    background-color: #f7f7f7;
+  }
+  .data{
+    border:none;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+  .data:focus{
+    outline: none;
+  }
+  .data.checked{
+    background-color: #f7f7f7;
+    border-color: #f7f7f7;
+  }
+  .data.normal{
+    caret-color: transparent;
+    border : 1px solid #f7f7f7;
+  }
+  .data.editable{
+    border : 1px solid grey;
+    border-radius: 0.25rem;
+  }
+  .data.editable:focus{
+    border:1px solid blue;
+  }
+  .icon{
+    padding-right: 1rem;
+    cursor: pointer;
+  }
+  
