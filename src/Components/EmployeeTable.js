@@ -65,7 +65,7 @@ const EmployeeTable = ({ employees, handleCheck, onDelete, onEdit }) => {
               <th>
                 <div className="data">Role</div>
               </th>
-              <th>Action</th>
+              <th>Actions</th>
             </tr>
           </thead>
           <tbody>
