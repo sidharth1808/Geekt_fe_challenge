@@ -35,13 +35,13 @@ const Pagination = ({page,setPage,totalNumberOfPages,maxItemsInPage }) =>{
     <>
     
     <ul className="page-block">
-    <li className={`page-no${page===1?" not-active":""}`} onClick={toFirst}>
-        <div className="content">
+    <li className={`pages-no${page===1?" not-active":""}`} onClick={toFirst}>
+        <div className="paginationcontent">
           &lt;&lt;
         </div>
       </li>
-      <li className={`page-no${page===1?" not-active":""}`} onClick={previous}>
-        <div className="content">
+      <li className={`pages-no${page===1?" not-active":""}`} onClick={previous}>
+        <div className="paginationcontent">
         &lt;
         </div>
       </li>
@@ -49,18 +49,18 @@ const Pagination = ({page,setPage,totalNumberOfPages,maxItemsInPage }) =>{
         <button
           key={index}
           onClick={() => changePage(item)}
-          className={`page-no${page === item ? ' active' : ""}`}
+          className={`pages-no${page === item ? ' active' : ""}`}
         >
-          <span className="content">{item}</span>
+          <span className="paginationcontent">{item}</span>
         </button>
       ))}
-      <li className={`page-no${page===totalNumberOfPages?" not-active":""}`} onClick={next}>
-        <div className="content">
+      <li className={`pages-no${page===totalNumberOfPages?" not-active":""}`} onClick={next}>
+        <div className="paginationcontentt">
           &gt;
         </div>
       </li>
-      <li className={`page-no${page===totalNumberOfPages?" not-active":""}`} onClick={tolast}>
-        <div className="content">
+      <li className={`pages-no${page===totalNumberOfPages?" not-active":""}`} onClick={tolast}>
+        <div className="paginationcontent">
           &gt;&gt;
         </div>
       </li>
