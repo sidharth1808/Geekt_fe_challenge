@@ -1,35 +1,51 @@
-.page-block{
+.pagination-block{
     list-style: none;
     display: flex;
     align-self: center;
     justify-content: center;
     margin: 1rem 0;
     padding: 0;
-  }
-  .pages-no{
-    height: 2.5rem;
-    width: 2.5rem;
-    background: #2e79da;
-    color: #fff;
-    padding: 0rem;
-    margin: 0 0.5rem;
-    vertical-align: center;
-    cursor: pointer;
-    border: 1px solid #2e79da;
-    border-radius: 50%;
-    transition: 0.5s;
+    }
+    .page-no{
+      height: 2.5rem;
+      width: 2.5rem;
+      background: #2e79da;
+      color: #fff;
+      padding: 0rem;
+      margin: 0 0.5rem;
+      vertical-align: center;
+      cursor: pointer;
+      border: 1px solid #2e79da;
+      border-radius: 50%;
+      transition: 0.5s;
+      
+    }
+    .page-no.active{
+      background: #fff;
+      color:#2e79da;
+    }
+    .page-no.not-active{
+      background-color: #e9e9e9;
+      border-color: #b9b9b9;
+      color: #b9b9b9;
+    }
+    .page-no .pagination-content{
+      text-align: center;
+      font-size: 1.2rem;
+    }
+  
+    @media (max-width:566px){
+      .page-no{
+        height: 2rem;
+        width: 2rem;
+        padding: 0.2rem;
+        margin: 0 0.2rem;
+        font-size: 0.5rem;
+      }
     
-  }
-  .pages-no.active{
-    background: #fff;
-    color:#2e79da;
-  }
-  .pages-no.not-active{
-    background-color: #e9e9e9;
-    border-color: #b9b9b9;
-    color: #b9b9b9;
-  }
-  .pages-no .paginationcontent{
-    text-align: center;
-    font-size: 1.2rem;
-  }
+      .pagination-block{
+        margin: 1.5rem 0;
+       
+        
+      }
+    }

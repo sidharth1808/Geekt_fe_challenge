@@ -50,6 +50,12 @@ const Home = () =>{
     duplicateEmployees = duplicateEmployees.filter(employee => employee.id !== id);
     setEmployees(duplicateEmployees);
   }
+  const handleDeleteSelected =()=>{
+   let duplicateEmployees = [...employees];
+   duplicateEmployees = duplicateEmployees.filter(employee => !employee.isChecked);
+   setEmployees(duplicateEmployees);
+  }
+  
 
   useEffect(()=>{
     fetchEmployees()
@@ -86,8 +92,8 @@ return (
               employees={filteredEmployees}
               handleCheck={handleCheck}
               onDelete={handleDelete}
-              // onDeleteSelected={handleDeleteSelected}
-                 onEdit={handleEdit} 
+              onDeleteSelected={handleDeleteSelected}
+              onEdit={handleEdit} 
               />}
     </div>
   </div>

@@ -33,7 +33,16 @@ td,th{
     border:1px solid blue;
   }
   .icon{
-    padding-right: 1rem;
+    
+    margin-right: 1rem;
     cursor: pointer;
+    margin-left: 1rem;
+    
   }
-  
+
+  @media (max-width:566px){
+    .actions{
+      display: flex;
+    }
+    
+  }

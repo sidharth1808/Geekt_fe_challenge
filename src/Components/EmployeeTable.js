@@ -3,7 +3,7 @@ import EmployeeDetails from "./EmployeeDetails";
 import Pagination from "./Pagination";
 import "./EmployeeTable.css";
 
-const EmployeeTable = ({ employees, handleCheck, onDelete, onEdit }) => {
+const EmployeeTable = ({ employees, handleCheck, onDelete, onDeleteSelected, onEdit }) => {
   const maxItemsInPage = 10;
   
   const [page, setPage] = useState(1);
@@ -87,6 +87,7 @@ const EmployeeTable = ({ employees, handleCheck, onDelete, onEdit }) => {
         <button
           className={`dlt-btn${!anyBoxChecked ? " not-active " : ""}`}
           disabled={!anyBoxChecked ? "disabled" : ""}
+          onClick={onDeleteSelected}
         >
           Delete Selected
         </button>

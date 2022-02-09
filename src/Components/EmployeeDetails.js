@@ -1,5 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import "./EmployeeDetails.css";
+import "./EmployeeDetails.css";
+import {AiFillDelete , AiFillCloseCircle , AiFillSave} from 'react-icons/ai'
+import {GrEdit} from 'react-icons/gr'
+
 
 
 const EmployeeDetails = ({row,handleCheck,onDelete,onEdit,onEditClick,flag}) =>{
@@ -72,18 +76,18 @@ const EmployeeDetails = ({row,handleCheck,onDelete,onEdit,onEditClick,flag}) =>{
           {editMode ?
             <>
               <span className="icon" onClick={handleSave} >
-                Save
+              <AiFillSave />
               </span>
               <span className="icon" onClick={handleCancel} >
-                Close
+              <AiFillCloseCircle/>
               </span>
             </>
             : <>
               <span className="icon" onClick={handleEditClick} >
-                Edit
+              <GrEdit />
               </span>
               <span className="icon" onClick={handleDelete} >
-                Delete
+              <AiFillDelete />
               </span>
             </>}
         </div>
