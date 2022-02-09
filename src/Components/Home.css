@@ -1,3 +1,38 @@
+body{
+    background-color: #ff4f52;  
+}
+.container{
+    background-color: #ff4f52;
+}
+
 .search-box{
     width: 100%;
+    margin:0.5rem 0 0.5rem 0.5rem;
+    border: none;
+    outline: none;
+    background-color: #0e0c0c;
+    color: #ff4f52;
+  }
+  ::placeholder{
+      color: #ff4f52;
+  }
+  .search-box-container{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0e0c0c;
+    padding: 0.5rem;
+    border-radius: 1.5rem;
+    color: #ff4f52;
+    box-shadow: 0.25rem 0.25rem 0rem #2e2d2d;
+    margin-top: 0.5rem;
+  }
+  @media (max-width:566px){
+      .search-box-container{
+          width: 100%;
+          
+      }
   }

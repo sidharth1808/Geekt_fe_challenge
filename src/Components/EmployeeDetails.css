@@ -5,11 +5,12 @@ td,th{
     text-align: left;
   }
   tr.checked{
-    background-color: #f7f7f7;
+    background-color: #f52a2e;
   }
   .data{
+    background-color: #ff4f52;
     border:none;
-    font-family: inherit;
+    font-family: "Lato", sans-serif;
     font-size: 1rem;
     padding: 0.5rem 1rem;
     width: 100%;
@@ -18,19 +19,19 @@ td,th{
     outline: none;
   }
   .data.checked{
-    background-color: #f7f7f7;
-    border-color: #f7f7f7;
+    background-color: #f52a2e;
+    border: none;
   }
   .data.normal{
     caret-color: transparent;
-    border : 1px solid #f7f7f7;
+    border : none;
   }
   .data.editable{
     border : 1px solid grey;
     border-radius: 0.25rem;
   }
   .data.editable:focus{
-    border:1px solid blue;
+    border:1px solid #0e0c0c;
   }
   .icon{
     

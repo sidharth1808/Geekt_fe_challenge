@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios'
 import EmployeeTable from "./EmployeeTable"
 import "./Home.css"
-
+import {BiSearchAlt} from 'react-icons/bi'
 
 const Home = () =>{
   const[searchKey, setSearchKey] = useState("");
@@ -81,11 +81,13 @@ return (
   <>
   <div className="container">
     <div className="search-box-container">
+    <BiSearchAlt />
     <input className="search-box"
             name="search"
             value={searchKey}
             onChange={(e) => setSearchKey(e.target.value)}
             placeholder="Search by name, email or role" />
+            
     </div> 
     <div>
     {filteredEmployees && <EmployeeTable
